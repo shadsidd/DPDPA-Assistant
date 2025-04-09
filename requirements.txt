@@ -16,9 +16,9 @@ streamlit>=1.28.0
 agno
 pydantic>=1.9.0,<2.0.0
 pydantic-settings<2.0.0
-chromadb==0.3.29
-python-dotenv>=1.0.0
-duckduckgo-search>=4.1.1
-openai>=1.3.0
+chromadb
+python-dotenv
+duckduckgo-search
+openai
 pysqlite3-binary
 typing-extensions>=3.7.4,<4.0.0
