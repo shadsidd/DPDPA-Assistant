@@ -1,3 +1,17 @@
+streamlit
+langchain
+langchain-community
+langchain-openai
+openai
+chromadb 
+pypdf
+tiktoken
+beautifulsoup4
+crawl4ai
+aiohttp
+aiofiles
+python-dotenv
+lxml
 streamlit>=1.28.0
 agno
 pydantic>=1.9.0,<2.0.0
