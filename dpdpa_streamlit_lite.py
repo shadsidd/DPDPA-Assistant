@@ -39,16 +39,21 @@ def initialize_vector_db():
         vector_db = ChromaDb(
             collection=COLLECTION_NAME,
             path=CHROMA_PERSIST_DIR,
-            persistent_client=True
+            persistent_client=True,
+            #distance_metric="cosine"
         )
         
         try:
             # Try to list all collections to verify connection
             all_collections = vector_db.client.list_collections()
-            print(f"Available collections: {[col.name for col in all_collections]}")
+            print(f"Available collections: {all_collections}")  # Now returns just names
             
-            # Get or create collection
-            collection = vector_db.client.get_or_create_collection(name=COLLECTION_NAME)
+            # Get collection directly instead of get_or_create
+            if COLLECTION_NAME in all_collections:
+                collection = vector_db.client.get_collection(name=COLLECTION_NAME)
+            else:
+                collection = vector_db.client.create_collection(name=COLLECTION_NAME)
+                
             collection_size = collection.count()
             print(f"Successfully connected to ChromaDB collection: {COLLECTION_NAME}")
             print(f"Collection size: {collection_size} documents")
