@@ -2,4 +2,8 @@ sqlite3
 python3-dev
 build-essential
 gcc
-g++ 
+g++
+python3-setuptools
+python3-pip
+python3-wheel
+libsqlite3-dev 
