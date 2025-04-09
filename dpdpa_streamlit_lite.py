@@ -17,7 +17,7 @@ load_dotenv()
 OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
 
 COLLECTION_NAME = "dpdpa_knowledge_lc_final_v5"
-CHROMA_PERSIST_DIR = os.path.abspath("./dpdpa_chroma_lc_final_v5")
+CHROMA_PERSIST_DIR = os.path.join(".", "dpdpa_chroma_lc_final_v5")
 persist_path = Path(CHROMA_PERSIST_DIR)
 warnings.filterwarnings("ignore", category=FutureWarning)
 

@@ -3,3 +3,5 @@ agno
 chromadb>=0.4.0
 python-dotenv>=1.0.0
 duckduckgo-search>=4.1.1
+dotenv
+openai
