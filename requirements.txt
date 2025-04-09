@@ -12,13 +12,13 @@ aiohttp
 aiofiles
 python-dotenv
 lxml
-streamlit>=1.28.0
+streamlit
 agno
-pydantic>=1.9.0,<2.0.0
-pydantic-settings<2.0.0
+pydantic
+pydantic-settings
 chromadb
 python-dotenv
 duckduckgo-search
 openai
 pysqlite3-binary
-typing-extensions>=3.7.4,<4.0.0
+typing-extensions
