@@ -103,11 +103,3 @@ DPDPA UI Application/
 ## Contributing
 
 Contributions are welcome! Please feel free to submit pull requests.
-
-## License
-
-[Add your license information here]
-
-## Support
-
-For support, please [add contact information or support channels] 
