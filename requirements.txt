@@ -11,3 +11,4 @@ chromadb
 python-dotenv
 duckduckgo-search
 typing-extensions
+sentence-transformers
